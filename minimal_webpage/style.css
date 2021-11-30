@@ -1,0 +1,381 @@
+/* =Reset
+-------------------------------------------------------------- */
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+html {
+    font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+    overflow-y: scroll; /* Keeps page centred in all browsers regardless of content height */
+    -webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+    -ms-text-size-adjust: 100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+body {
+    background: #fff;
+    font:12px/14px Arial, Helvetica, sans-serif;
+    min-width: 320px;
+    color: #404040;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+    display: block;
+}
+ol, ul {
+    list-style: none;
+}
+table { /* tables still need 'cellspacing="0"' in the markup */
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+a{
+    color: #878787;
+    text-decoration: none;
+    outline: none;
+}
+a:focus {
+    color: #0481c2;
+    outline: thin dotted;
+    outline: none;
+}
+a:hover,
+a:active { /* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */
+    color: #0481c2;
+    outline: none;
+}
+
+
+.menu-opener{display: none;}
+
+img{
+  height: auto;
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+a img{
+  border: 0;
+}
+
+.clear::after{
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.wrapper{
+  max-width: 950px;
+  margin: auto;
+  padding-inline: 15px;
+  position: relative;
+}
+
+.header{
+position: relative;
+padding-block: 45px;
+}
+
+.logo{
+  float: left;
+  max-width: 150px;
+}
+
+.navbar{
+  float: right;
+  padding-top: 12px;
+  width: 80%;
+  text-align: right;
+}
+
+.nav{
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.nav li{
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0 5px 30px;
+}
+
+.main-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.sidebar{
+  padding-block: 20px;
+  width: 26%;
+  border-block: 5px solid #0481c2;
+}
+
+.news-widget{
+  border-bottom: 2px solid #b6b5b5;
+  margin: 0 0 15px;
+  padding: 0 0 15px;
+}
+
+.news-widget h2{
+  font-size: 24px;
+  line-height: 26px;
+  font-family: "Trebuchet MS";
+  color: #0481c2;
+  margin: 0 0 24px;
+  padding-block: 20px;
+  border-bottom: 1px solid #878787;
+}
+
+.news-widget h3{
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Trebuchet MS";
+  color: #0481c2;
+  margin-block: 20px;
+}
+
+.news-widget .readmore{
+  text-decoration: none;
+  color: #878787;
+  padding: 0 0 15px;
+  margin: 0 0 15px;
+}
+
+.news-widget p {
+  margin-bottom: 15px;
+}
+
+.content{
+    width: 70%;
+    margin-left: 4%;
+    padding-block: 10px;
+    border-block: 5px solid #0481c2;
+  }
+
+.top-banner{
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.banner-content{
+  position: absolute;
+  background-color: rgba(145, 145, 140, 0.47);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 175px;
+  padding: 69px 11px 10px 15px;
+}
+
+.banner-content h1{
+  font-size: bold;
+  font-style: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+}
+
+.threecolumns{
+  letter-spacing: -4px;
+}
+
+.info-article{
+  display: inline-block;
+  vertical-align: top;
+  width: 30.5%;
+  margin: 0 0 20px 4%;
+  letter-spacing: 0;
+}
+
+.info-article:first-child{
+  margin-left: 1px;
+}
+
+.info-article img{
+  margin-bottom: 20px;
+}
+
+.info-article h3{
+  color: #0481c2;
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+.info-article p{
+ margin-bottom: 15px;
+ text-align: justify;
+}
+
+.info-article p a{
+ color: #0481c2;
+ text-decoration: underline;
+}
+
+.info-article p a:hover{
+  text-decoration: none;
+}
+
+.footer{
+  position: relative;
+  padding: 5px 0 5px 0;
+}
+
+.social-icons{
+  float: left;
+}
+
+.social-icons img{
+  max-width: 25%;
+  display: inline-block;
+  padding: 3px;
+}
+
+.copyright{
+  float: right;
+  padding: 5px 0 5px 0;
+}
+
+/* 
+==========================================
+            Media Query
+========================================== 
+*/
+
+@media all and (max-width: 767px){
+  .banner-content{
+    padding-top: 20px;
+  }
+  .header{
+    padding-block: 20px;
+  }
+  .nav{
+    font-size: 17px;
+  }
+  .logo{
+    max-width: 80px;
+  }
+  .menu-opener{
+    display: block;
+    font-size: 0;
+    width: 40px;
+    height: 40px;
+    background: url(../images/WhatsApp Image 2021-11-16 at 10.34.21 P.jpeg) no-repeat center;
+    background-size: 25px;
+    float: right;
+    margin: 0;
+  }
+  .mobile-menu .menu-opener{
+    background-image: url(../images/WhatsApp Image 2021-11-16 at 10.34.22.jpeg);
+  }
+  .navbar{
+    float: none;
+    padding: 15px;
+    text-align: right;
+    position: absolute;
+    width: 200px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    top: 75px;
+    right: -400px;
+    transition: all 0.4s linear;
+    z-index: 999;
+  }
+  .mobilemenu .navbar {
+        right: 0;
+    }
+    .nav li {
+        display: block;
+        margin:0;
+        border-bottom: 1px solid #ddd;
+    }
+    .nav li:last-child {
+        border-bottom:0;
+    }
+    .nav li a{
+        display: block;
+        padding:7px 10px;
+    }
+    .sidebar {
+        width: 100%;
+        border-block-width: 3px;
+    }
+    .main-content {
+        flex-direction: column-reverse;
+    }
+    .content {
+        width: 100%;
+        margin-left: 0;
+        padding-block: 10px;
+        border-block-width: 3px;
+    }
+    .banner-content {
+        padding-top: 10px;
+    }
+    .banner-content h1 {
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .top-banner {
+        margin-bottom: 15px;
+    }
+    .info-article {
+        width: 100%;
+        margin: 0 0 20px;
+        text-align: center;
+    }
+    .info-article h3 {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .footer {
+        padding: 10px 0;
+        text-align: center;
+    }
+    .social-icons {
+        float: none;
+        margin-bottom: 5px;
+    }
+    .copyright {
+        float: none;
+        padding: 0;
+    }
+    .news-widget:last-child {
+        border-bottom: 0;
+    }
+}
+
+
+}
